@@ -19,9 +19,6 @@ void GetUserInput()
     cout << "Please enter 3 numbers, each separated by a space or a new line (by pressing enter): " << endl;
 
     cin >> a >> b >> c;
-    
-    sum = CalculateSum(a, b, c);
-    average = CalculateAverage(a, b, c);
 }
 
 void DisplayErrorMessage()
@@ -58,6 +55,9 @@ int main()
         DisplayErrorMessage();
         return 0;
     }
+
+    sum = CalculateSum(a, b, c);
+    average = CalculateAverage(a, b, c);
 
     DisplaySum();
     DisplayAverage();
